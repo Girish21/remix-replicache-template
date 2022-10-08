@@ -1,0 +1,7 @@
+{
+  "watch": ["server"],
+  "ignore": ["**/*.test.ts"],
+  "ext": "ts,mjs,js,json",
+  "exec": "node scripts/server-build.mjs && node -r dotenv/config ./dist/index.js",
+  "legacyWatch": true
+}
