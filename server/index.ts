@@ -19,7 +19,7 @@ app.use(
 
 app.use(express.static('public', { maxAge: '1h' }))
 
-app.use(morgan('tiny'))
+app.use(morgan('dev'))
 
 app.all(
   '*',
@@ -40,7 +40,7 @@ app.all(
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
-  console.log(`Express server listening on port ${port}`)
+  console.log(`🚀 server listening on port ${port}`)
 })
 
 function purgeRequireCache() {
